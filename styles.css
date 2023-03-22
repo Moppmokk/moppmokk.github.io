@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: clip;
+    overflow: clip;
     display: flow-root;
 }
 
@@ -18,7 +18,7 @@ body {
     color: black;
     margin: 0 auto;
     position: relative;
-    overflow-x: clip;
+    overflow: clip;
     display: flow-root;
 }
 
