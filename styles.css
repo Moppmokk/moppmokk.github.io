@@ -5,7 +5,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -70,10 +69,12 @@ nav {
     padding: 48px 0 0 0;
     background-color: rgb(26, 26, 26);
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     box-sizing: border-box;
     font-family: beloved-sans, sans-serif;
     z-index: 13;
+    display: block;
 }
 
 nav ul {
@@ -202,6 +203,8 @@ section {
     position: relative;
     left: 0;
     transition: left 1s ease;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #showCont article {
