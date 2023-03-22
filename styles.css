@@ -17,7 +17,7 @@ body {
     color: black;
     margin: 0 auto;
     overflow-x: hidden;
-    box-sizing: border-box;
+    position: relative;
 }
 
 header {
