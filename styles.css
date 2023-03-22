@@ -16,7 +16,6 @@ body {
     width: 100vw;
     color: black;
     margin: 0 auto;
-    overflow-x: hidden;
     position: relative;
 }
 
