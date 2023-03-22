@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
     position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,13 +18,14 @@ body {
     color: black;
     margin: 0 auto;
     position: relative;
-    contain: paint;
+    overflow-x: hidden;
 }
 
 header {
     height: 100vh;
     width: 100vw;
     position: relative;
+    overflow-x: hidden;
 }
 
 header h1, header h2 {
@@ -70,9 +72,7 @@ nav {
     width: 100%;
     padding: 48px 0 0 0;
     background-color: rgb(26, 26, 26);
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+    position: relative;
     box-sizing: border-box;
     font-family: beloved-sans, sans-serif;
     z-index: 13;
