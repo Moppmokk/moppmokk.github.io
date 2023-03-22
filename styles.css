@@ -5,6 +5,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: clip;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     color: black;
     margin: 0 auto;
     position: relative;
+    overflow-x: clip;
 }
 
 header {
@@ -203,8 +205,6 @@ section {
     position: relative;
     left: 0;
     transition: left 1s ease;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 #showCont article {
