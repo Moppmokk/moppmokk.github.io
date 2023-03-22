@@ -927,6 +927,10 @@ footer a:hover {
 
 @media only screen and (max-width: 480px) {
     .longShowText {
-        width: 55% !important;
+        width: 100% !important;
+    }
+
+    .showButtons {
+        width: 100%;
     }
 }

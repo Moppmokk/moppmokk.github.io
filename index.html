@@ -416,6 +416,32 @@
 
         setInterval(moveHeaderSlider, 4000);
 
+        // slide shows
+        let contPosStart = null;
+        let xPosStart = null;
+        let xDiff = null;
+        const showCont = document.getElementById("showCont");
+
+        showCont.addEventListener('touchstart', function (e) {
+            contPosStart = window.getComputedStyle(showCont).left;
+            xPosStart = e.touches[0].clientX;
+        })
+
+        showCont.addEventListener('touchmove', function (e) {
+            xDiff = e.touches[0].clientX - xPosStart;
+            showCont.style.left = parseInt(contPosStart) + xDiff + 'px';
+        })
+
+        showCont.addEventListener('touchend', function (e) {
+            if (xDiff <= 30 && xDiff >= -30) {
+                showCont.style.left = contPosStart;
+            } else if (xDiff < -30) {
+                toRight();
+            } else if (xDiff > 30) {
+                toLeft();
+            }
+        })
+
         // showSlider Thumbnails
         const moveToBb = () => {
             document.getElementById("showCont").style.left = "0";
