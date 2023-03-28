@@ -710,6 +710,7 @@ footer a:hover {
 
     nav ul li:first-of-type {
         display: block;
+        z-index: 1000;
     }
 
     nav ul li:first-of-type::before {
@@ -816,7 +817,7 @@ footer a:hover {
     }
 
     #hamburger {
-        top: -10px;
+        bottom: -10px;
     }
 
     #showsThumbs p {
@@ -926,6 +927,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+    header h1 {
+        width: 200px;
+    }
+
     .longShowText {
         width: 100% !important;
     }
