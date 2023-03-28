@@ -337,7 +337,11 @@ section article p {
 }
 
 #presse1 {
-    background: url(images/SWYW_02.jpg) no-repeat fixed top center ;
+    background-image: url(images/SWYW_02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position-y: top;
+    background-position-x: center;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
