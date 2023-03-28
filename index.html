@@ -427,6 +427,7 @@
             showsArr[i].addEventListener('touchstart', function (e) {
                 contPosStart = window.getComputedStyle(showCont).left;
                 xPosStart = e.touches[0].clientX;
+                console.log(showsArr[i]);
             })
 
             showsArr[i].addEventListener('touchmove', function (e) {
