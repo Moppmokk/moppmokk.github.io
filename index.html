@@ -439,9 +439,17 @@
                 if (xDiff <= 30 && xDiff >= -30) {
                     showCont.style.left = contPosStart;
                 } else if (xDiff < -30) {
-                    toRight();
+                    if (leftRightCounter === 2) {
+                        showCont.style.left = "-200%";
+                    } else {
+                        toRight();
+                    }
                 } else if (xDiff > 30) {
-                    toLeft();
+                    if (leftRightCounter === 0) {
+                        showCont.style.left = "0";
+                    } else {
+                        toLeft();
+                    }
                 }
             })
         }
