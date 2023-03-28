@@ -930,7 +930,15 @@ footer a:hover {
         width: 100% !important;
     }
 
+    #showsThumbs {
+        flex-direction: column;
+    }
+
     .showButtons {
         width: 100%;
+    }
+
+    #showsThumbs p:nth-of-type(even) {
+        display: none;
     }
 }
