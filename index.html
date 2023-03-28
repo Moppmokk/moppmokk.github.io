@@ -421,7 +421,31 @@
         let xPosStart = null;
         let xDiff = null;
         const showCont = document.getElementById("showCont");
+        const showsArr = document.getElementsByClassName("shows");
 
+        for (let i = 0; i < showsArr.length; i++) {
+            showsArr[i].addEventListener('touchstart', function (e) {
+                contPosStart = window.getComputedStyle(showCont).left;
+                xPosStart = e.touches[0].clientX;
+            })
+
+            showsArr[i].addEventListener('touchmove', function (e) {
+                xDiff = e.touches[0].clientX - xPosStart;
+                showCont.style.left = parseInt(contPosStart) + xDiff + 'px';
+            })
+
+            showsArr[i].addEventListener('touchend', function (e) {
+                if (xDiff <= 30 && xDiff >= -30) {
+                    showCont.style.left = contPosStart;
+                } else if (xDiff < -30) {
+                    toRight();
+                } else if (xDiff > 30) {
+                    toLeft();
+                }
+            })
+        }
+
+/*
         showCont.addEventListener('touchstart', function (e) {
             contPosStart = window.getComputedStyle(showCont).left;
             xPosStart = e.touches[0].clientX;
@@ -429,7 +453,7 @@
 
         showCont.addEventListener('touchmove', function (e) {
             xDiff = e.touches[0].clientX - xPosStart;
-            //showCont.style.left = parseInt(contPosStart) + xDiff + 'px';
+            showCont.style.left = parseInt(contPosStart) + xDiff + 'px';
         })
 
         showCont.addEventListener('touchend', function (e) {
@@ -441,7 +465,7 @@
                 toLeft();
             }
         })
-
+*/
         // showSlider Thumbnails
         const moveToBb = () => {
             document.getElementById("showCont").style.left = "0";
