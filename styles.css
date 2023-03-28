@@ -338,6 +338,13 @@ section article p {
 
 #presse1 {
     background: url(images/SWYW_02.jpg) no-repeat fixed center top;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
     background-size: cover;
 }
 
@@ -423,6 +430,13 @@ section article p {
 
 #presse2 {
     background: url(images/Blues_Brothers_03.jpg) no-repeat fixed center top;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
     background-size: cover;
 }
 
@@ -506,6 +520,13 @@ tr:nth-of-type(n+2):hover a {
 
 #presse3 {
     background: url(images/Blues_Brothers_06.jpg) no-repeat fixed center top;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
     background-size: cover;
 }
 
