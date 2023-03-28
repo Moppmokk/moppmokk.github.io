@@ -639,6 +639,7 @@ footer a:hover {
     border-top: solid 1px white;
     padding-top: 1%;
     background-color: black;
+    overflow-x: scroll;
 }
 
 .lightboxThumbs img {
@@ -773,15 +774,6 @@ footer a:hover {
         width: 100%;
         object-fit: cover;
         height: unset;
-    }
-
-    .lightboxThumbs {
-        flex-wrap: wrap;
-        height: 25%;
-    }
-
-    .lightboxThumbs img {
-        height: 50%;
     }
 }
 
