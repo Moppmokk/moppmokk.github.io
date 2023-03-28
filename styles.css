@@ -336,21 +336,12 @@ section article p {
     margin-right: 10px;
 }
 
-#presse1 {
-    background-image: url(images/SWYW_02.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-position-y: top;
-    background-position-x: center;
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-
+.presseBlock img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .presseBlock {
-    height: 80vh;
     position: relative;
     width: 100%;
 }
@@ -429,18 +420,6 @@ section article p {
     display: none;
 }
 
-#presse2 {
-    background: url(images/Blues_Brothers_03.jpg) no-repeat fixed center top;
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-}
-
 #presse2 blockquote {
     background-color: rgba(50, 50, 73, 0.7);
 }
@@ -517,18 +496,6 @@ tr:nth-of-type(n+2):hover a {
 
 .loc:last-child::after {
     content: '';
-}
-
-#presse3 {
-    background: url(images/Blues_Brothers_06.jpg) no-repeat fixed center top;
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
 }
 
 #presse3 blockquote {
@@ -797,6 +764,12 @@ footer a:hover {
         object-fit: cover;
         height: unset;
     }
+
+    .presseBlock blockquote {
+        width: 60%;
+        left: 20%;
+        top: 40%;
+    }
 }
 
 @media only screen and (max-width: 852px) {
@@ -888,10 +861,11 @@ footer a:hover {
     }
 
     .presseBlock blockquote {
-        width: 85%;
+        width: 90%;
         top: unset;
         left: 5%;
         bottom: 0;
+        font-size: 1rem;
     }
 
     .secHeader {
@@ -959,5 +933,14 @@ footer a:hover {
 
     #showsThumbs p:nth-of-type(even) {
         display: none;
+    }
+
+    .presseBlock blockquote {
+        width: 90%;
+        top: unset;
+        left: 5%;
+        bottom: 0;
+        font-size: 1rem;
+        position: relative;
     }
 }
