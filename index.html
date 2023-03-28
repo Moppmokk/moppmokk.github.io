@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="keywords" content="Musical, Musiktheater, Shows, Agentur">
     <meta name="description" content="Agentur für Musical, Musiktheater und Konzerte">
-    <link rel="stylesheet" href="https://use.typekit.net/tsj6lpv.css">  
+    <link rel="stylesheet" href="https://use.typekit.net/tsj6lpv.css">
 </head>
+
 <body>
     <!-- Header -->
     <header name="navTopTarget">
@@ -38,193 +40,359 @@
     <!-- Shows Slider -->
     <section name="navShoTarget">
         <h2 class="secHeader">Unsere Shows</h2>
-        <div role="presentation" id="showsThumbs"><p onclick="moveToBb()">Blues Brothers</p><p>|</p><p onclick="moveToDl5j()">Die letzten 5 Jahre</p><p>|</p><p onclick="moveToSwyw()">Swing When You’re Winning</p></div>
-        <p id="toLeft" onclick="toLeft()"><</p>
-        <p id="toRight" onclick="toRight()">></p>
-            <div id="showCont">
-                    <!-- Blues Brothers -->
-                <article class="shows">
-                    <h2>Blues Brothers - Das Musical</h2>
-                    <p>Sie werden niemals geschnappt. Sie sind unterwegs im Auftrag des Herrn.</p>
-                    <div class="imgCont" role="presentation">
-                        <img class="showPic" src="images/Blues_Brothers_04.jpg" alt="Foto Blues Brothers Musical Live">
-                        <p><strong>Der Kultfilm als Musical!</strong> <br><br> Acht Darstellerinnen und Darsteller sind mit einer sechsköpfigen Liveband im Auftrag des Herrn unterwegs und bringen die legendären Blues Brothers in einer rasanten Inszenierung zurück auf die Bühne.</p>
-                        <div class="showButtons" role="presentation">
-                            <button onclick="displayOffShowButtons()">x</button>
-                            <button onclick="window.open('http://www.youtube.com', '_blank')">Trailer</button>
-                            <button onclick="showLightboxBB()">Fotos</button>
-                            <button onclick="showBesetzung(event)">Besetzung</button>
-                            <button onclick="showPressestimmen(event)">Pressestimmen</button>
-                            <button onclick="window.open('technical-rider-bb.pdf')">Technical Rider</button>
-                        </div>
-                        <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
-                        <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
-                        <p class="longShowText">„Wir sind unterwegs im Auftrag des Herrn.“ Dieser Satz von Dan Aykroyd alias Elwood Blues ist im Jahr 1980 in die Filmgeschichte eingegangen: Die „Blues Brothers“ Jake und Elwood wollen ihre alte Band wieder zusammenbringen, um ihr einstiges Waisenhaus vor dem e Verkauf zu retten. Dass dabei fast alles schief geht, was schief gehen kann, war zu erwarten. Nicht zuletzt aufgrund der zahlreichen prominenten Gäste im Film wie James Brown, Cab Calloway, Ray Charles und natürlich Aretha Franklin hat der Film längst Kultstatus erreicht. <br><br> Regie: Gerhard Weber <br> Choreografie: Julius P. Williams III <br> Musikalische Leitung: Philipp Lang</p>
-                    </div>
-                    <div class="besetzung" id="besetzungBB" role="presentation">
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Jake Blues</strong><br>Florian Hinxlage / <br>Philip Richert</p>
-                        </div>
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Elwood Blues</strong><br>Philipp Lang</p>
-                        </div>
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Aretha/Reverend</strong><br>Vanessa Weiskopf</p>
-                        </div>
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Curtis/Ray</strong><br>Julius P. Williams III / <br>William Baugh</p>
-                        </div>
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Bob/Murph</strong><br>Stephan Wurfbaum</p>
-                        </div>
-                        <div class="act actBB">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Ensemble</strong><br>Irene Eggerstorfer (Dance Captain) <br> Katharina Maria Abt <br> Luisa Meloni <br> Maria-Lena Reimer <br> Pauline Sell</p>
-                        </div>
-                    </div>
-                    <div class="pressestimmen" id="pressestimmenBB" role="presentation">
-                        <div class="pressestimme pressestimmeBB">
-                            <blockquote cite="">Blues Brothers – an drei Abenden erlebte ein begeistertes Publikum in Donzdorf den Kultfilm als Musical … Die Handlung blieb auf der Spur der wichtigsten Filmstationen, illustrierte sie durch musikalische Einlagen, unzählige Kostümwechsel der Darstellerinnen und Darsteller, die jeweils in mehrere Rollen schlüpften und nicht zuletzt durch schauspielerische Meisterleistungen … Das Publikum schmiss sich weg vor Lachen, wenn Jake und Elwood bei den per Lenkrad angedeuteten Fahrten jedem Komiker Konkurrenz machten … Das Publikum feierte bei jedem Klassiker die Band und die Stimmen … Die Reise der Blues Brothers endete in nicht enden wollendem stehenden Applaus.
-                                <br><br>
-                                <p>Neue Württembergische Zeitung, 11.10.2021, Inge Czemmel</p>
-                            </blockquote>            
-                        </div>
-                        <div class="pressestimme pressestimmeBB">
-                            <blockquote cite="https://www.landeszeitung.de/kultur/regional/blues-brothers-musical-unterwegs-im-auftrag-des-herrn-EXJGKRUNXR26MULNRZNEN2VQO5.html">Die Blues Brothers, als Filmtypen seit gut 30 Jahren legendär, machen auch als Musicalhelden eine Menge Spaß. Beim Gastspiel in der Ritterakademie erntet ein hoch engagiertes Team Standing Ovations … Regisseur Gerhard Weber erzählt die Geschichte skizzenhaft. Szenen und Dialoge spielen sich in Comic-Kürze ab. Mehr braucht es nicht, denn alles steht im Dienst der Musik. Die kommt bärenstark rüber … Um sie herum wirbelt ein kleines, durch die Bank stark singendes, spielfreudiges Team in vielen Rollen und mit entsprechend schnellen Kostümwechseln … Im Publikum sitzen natürlich einige formvollendet behütete und sonnenbebrillte Blues Brothers. Sie rocken wie alle im Saal mit an diesem vor allem musikalisch komplett überzeugenden Abend, Zugaben inklusive.
-                                <br><br>
-                                <p><cite>"Blues Brothers"-Musical: Unterwegs im Auftrag des Herrn</cite>, Landeszeitung, 25.10.2021, Hans-Martin Koch</p>
-                            </blockquote>            
-                        </div>
-                        <div class="pressestimme pressestimmeBB">
-                            <blockquote cite="https://www.solinger-tageblatt.de/solingen/kultfilm-blues-brothers-witzig-auf-die-buehne-gebracht-92082693.html">Die Konzertdirektion Lang brachte eine temporeiche und witzige Bühnenfassung nach des Kultstreifens von 1980 nach Solingen, die schon nach wenigen Augenblicken die Herzen des Publikums erobert hatte und vielen im Saal ein Dauergrinsen ins Gesicht zauberte, das erst nach dem Schlussapplaus nachließ … Das Publikum wieherte vor Lachen, wenn die beiden Jungs bei den per Lenkrad angedeuteten Fahrten in dieser ‚Bullenschaukel‘ die Fahrgeräusche selbst machten … Unterstützt wurde das lustvolle Spiel von weiteren sechs Darstellern, die nicht nur sprachen und sangen, sondern mit Choreografien farbige Akzente setzten. Dazu gab es viel ‚Rhythm and Soul‘. Dank einer souveränen Band und stimmstarken Sängern stimmte die Musik jederzeit und ließ atmosphärische Leichtigkeit in den gut gefüllten Saal schwappen … Am Ende allen Schlamassels stand nicht nur das Happy End, sondern tosender Beifall mit zustimmenden Pfiffen.
-                                <br><br>
-                                <p><cite>Kultfilm „Blues Brothers“ witzig auf die Bühne gebracht</cite>, Solinger Tageblatt, 13.02.2023, Jutta Schreiber-Lenz</p>
-                            </blockquote>            
-                        </div>
-                    </div>    
-                </article>
-                    <!-- Die letzten 5 Jahre -->
-                <article class="shows">
-                    <h2>Die letzten 5 Jahre</h2>
-                    <p>Vom Verlieben und Verlassen</p>
-                    <div class="imgCont" role="presentation">
-                        <img class="showPic" src="images/DL5J_01.jpg" alt="Foto Die Letzten 5 Jahre Live">
-                        <p>Jason Robert Brown erzählt in DIE LETZTEN 5 JAHRE die Geschichte des Künstlerpaares Cathy und Jamie. <br><br> In kräftigen Farben erwecken seine Songs die Wege des aufsteigenden Autors Jamie und der eher erfolglosen Sängerin Cathy zum Leben, die sich treffen, sich unsterblich ineinander verlieben – und wieder verlieren…</p>
-                        <div class="showButtons" role="presentation">
-                            <button onclick="displayOffShowButtons()">x</button>
-                            <button>Trailer</button>
-                            <button onclick="showLightboxDl5j()">Fotos</button>
-                            <button onclick="showBesetzung(event)">Besetzung</button>
-                            <button onclick="showPressestimmen(event)">Pressestimmen</button>
-                            <button>Technical Rider</button>
-                        </div>
-                        <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
-                        <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
-                        <p class="longShowText">Das Stück wurde 2001 in Chicago uraufgeführt. Der Clou an dem durchkomponierten Kammermusical ist, dass die Geschichte aus Jamies Sicht chronologisch und aus Cathys Sicht rückwärts erzählt wird und sich die Erzählstränge bei der Hochzeit treffen.  In mitreißenden Stücken wird die emotionale Geschichte der beiden erzählt und zeigt die Höhen und Tiefen Ihrer Beziehung aus den jeweiligen Blickwinkeln. Mit Musicalstar Zodwa Selele und The-Voice-Finalist Simon Paterno in den Hauptrollen<br><br>Regie: Werner Bauer <br>Musikalische Leitung: Rebecca Lang</p>
-                    </div>
-                    <div class="besetzung" id="besetzungDL5J" role="presentation">
-                    <div class="act actDL5J">
-                        <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                        <p class="actVita"><strong>Cathy</strong><br>Zodwa Selele / <br> Lillemor Spitzer</p>
-                    </div>
-                    <div class="act actDL5J">
-                        <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                        <p class="actVita"><strong>Jamie</strong><br>Simon Paterno / <br> Philipp Lang</p>
-                    </div>
-                    <div class="act actDL5J">
-                        <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                        <p class="actVita"><strong>Klavier</strong><br>Rebecca Lang / <br>Maria van Alst</p>
-                    </div>
-                    <div class="act actDL5J">
-                        <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                        <p class="actVita"><strong>Cello</strong><br>Elisabet Iserte Lopez / <br>Jakob Nierenz</p>
-                    </div>
-                    </div>
-                    <div class="pressestimmen" id="pressestimmenDL5J" role="presentation">
-                        <div class="pressestimme pressestimmeDL5J">
-                            <blockquote cite="https://www.landeszeitung.de/kultur/regional/premiere-fuer-kammermusical-die-letzten-fuenf-jahre-MSHSXWSLDD5UCW4TGKQZPA2XRY.html">Das Lieben schreibt bekanntlich die besten Geschichten. Sie gehen nur leider oft nicht gut aus … Browns Musical ‚Die letzten fünf Jahre‘ aber blieb und wird vom Time-Magazine zu einer der besten Shows der Gegenwart erklärt … Jetzt kam es in einer freien, sehr ansprechenden und klugen Lüneburger Produktion in der Ritterakademie heraus … Regisseure sind gefordert, die Gegenläufigkeit plausibel zu machen. Werner Bauer hat eine griffige Idee: Im Hintergrund des aus Tafelwänden bestehenden Bühnenbilds verläuft ein Zeitstrahl … Formal tritt immer im Wechsel eine/r auf die Bühne – bis auf die Hochzeit. Bauer bringt beide in den Liedern zusammen. Die Akteure müsen also zugleich Zuwendung innerhalb des Liedes zeigen und den gerade laufenden Zeitsprung deutlich lassen … Simon Paterno bringt Musical-Erfahrung mit, spielt und singt sehr locker, vor allem im Rockigen, und bringt den Jamie glaubhaft rüber … Für die Cathy-Partie wurde ein Musicalstar gewonnen … Selele lässt mit ihrer kraftvollen, farbigen und variablen Stimme alles von Glückseligkeit bis Tränenkummer spüren. Das hat großes Format. … Hochkomplex und virtuos ist es, was Rebecca Lang im Dauereinsatz aus den Tasten holt … Umso eindringlicher kommen die ruhigen Momente rüber. Am Cello streicht Elisabet Iserte Lopez zusätzlich Farbe in die Musik, treibt auch mal das Rhythmische voran – das tut der Sache gut. … Die Premiere in der Ritterakademie war nicht ausgebucht, aber gebührend gefeiert wurde sie dennoch.
-                                <br><br>
-                                <p><cite>Premiere für Kammermusical „Die letzten fünf Jahre“</cite>, Landeszeitung, 26.03.2022, Hans-Martin Koch</p>
-                            </blockquote>            
-                        </div>
-                    </div>    
-                </article>
-                    <!-- Swing When You're Winning -->
-                <article class="shows">
-                    <h2>Swing When You're Winning</h2>
-                    <p>Robbie Williams Tribute Show</p>
-                    <div class="imgCont" role="presentation">
-                        <img class="showPic" src="images/SWYW_01.jpg" alt="Foto Swing When You're Winning Live">
-                        <p>„I will talk and Hollywood will listen” – so beginnt Robbie Williams’ legendäres Album Swing When You’re Winning. Nur ein einziges Mal war es live zu erleben und zwar in der ehrwürdigen Royal Albert Hall in London. Sänger und Schauspieler Philipp Lang bringt dieses Meisterwerk nun zurück auf die Bühne.</p>
-                        <div class="showButtons" role="presentation">
-                            <button onclick="displayOffShowButtons()">x</button>
-                            <button>Trailer</button>
-                            <button onclick="showLightboxSwyw()">Fotos</button>
-                            <button onclick="showBesetzung(event)">Besetzung</button>
-                            <button onclick="showPressestimmen(event)">Pressestimmen</button>
-                            <button>Technical Rider</button>
-                        </div>
-                        <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
-                        <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
-                        <p class="longShowText">Tauchen Sie ein in die goldene Zeit der Swing-Ära und lassen Sie sich von einem Robbie-Williams-Tribute-Konzert der besonderen Art verzaubern! Neben seinem international gefeierten Swingalbum dürfen auch die großen Radiohits wie Feel und Let Me Entertain You sowie der späte Nachfolger Swings Both Ways nicht fehlen. <br> Mit dem Sänger und Entertainer Philipp Lang in der Rolle des Robbie Williams, dem hervorragenden Sound der Coldfield Big Band und der Choreografie Irene Eggerstorfers erwarten Sie großes Entertainment und eine Reise in die glamouröse Welt des Swings – und zurück in die erfolgreichsten Jahre des Künstlers Robbie Williams.</p>
-                    </div>
-                    <div class="besetzung" id="besetzungSWYW" role="presentation">
-                        <div class="act actSWYW">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Robbie Williams</strong><br>Philipp Lang</p>
-                        </div>
-                        <div class="act actSWYW">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Ensemble</strong><br>Irene Eggerstorfer <br> Pauline Sell <br> Luisa Meloni <br> Bengisu Özmeric</p>
-                        </div>
-                        <div class="act actSWYW">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Coldfield Big Band</strong><br>Dennis Aubele <br> Christian Wolf <br> Maria van Alst <br> Vincent Nowacki <br> Michael Stegmaier <br> Daniel Schmid <br> Valentin Sachsenmaier <br> Alexander Schenk <br> David Sanwald <br> Lisa Leidenfrost <br> Marcus Schmid</p>
-                        </div>
-                        <div class="act actSWYW">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Musikalische Leitung</strong><br>Philipp Lang</p>
-                        </div>
-                        <div class="act actSWYW">
-                            <img src="images/darsteller/Florian_Hinxlage.jpg" alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
-                            <p class="actVita"><strong>Choreografie</strong><br>Irene Eggerstorfer</p>
-                        </div>
-                    </div>
-                    <div class="pressestimmen" id="pressestimmenSWYW" role="presentation">
-                        <div class="pressestimme pressestimmeSWYW">
-                            <blockquote cite="">Der Pulsschlag des Swing. Rund 700 Zuschauer feierten die Lumberjack Big Band, Philipp Lang, Sängerinnen und Tänzerinnen … Dann ist er da – der Sänger Philipp Lang, der … vom ersten Ton an in ausgewogener Symbiose mit der Big Band Robbie Williams‘ erfolreiches Album ‚Swing When You’re Winning‘ interpretiert … und man spürt sofort, die Chemie zwischen ihm und den Zuschauern passt … Philipp Lang bringt alles mit, was einen guten Bühnensänger ausmacht. Es ist einfach ein Genuss ihm zuzuhören und zuzusehen. Er ist charmant, sympathisch, professionell und mit mehreren Talenten gesegnet. Stimme: großartig. Intonation: top. Bewegung: geschmeidig. Ein smarter Typ im Anzug, Weste und Fliege … Zeigt sich bei ‚Shine My Shoes‘ sowie ‚Hot Fudge‘ von der rockigeren Seite, lässt bei ‚Feel‘ Frauenherzen schmelzen und punktet nicht zuletzt beim Stück ‚Soda Pop‘. Ein Hingucker sind die beiden Tänzerinnen Irene Eggerstorfer und Pauline Sell. Auch Technik und Lichtkomposition machten ihren Job gut. Das Fazit: ‚Let me entertain you‘ – ja, das erlebten die Besucher auf ganzer Linie.
-                                <br><br>
-                                <p>Neue Württembergische Zeitung, 26.04.2022, Sabine Ackermann</p>
-                            </blockquote>            
-                        </div>
-                        <div class="pressestimme pressestimmeSWYW">
-                            <blockquote cite="https://www.hz.de/kultur/kultur-regional/_robbie-williams_-in-heidenheim-philipp-lang-begeisterte-mit-seiner-tribute-show-im-konzerthaus-68100407.html">Stimmiges Konzept, sorgfältige Inszenierung und gute Mitstreiter: Philipp Lang überzeugte mit seiner Robbie-Williams-Tribute-Show im Konzerthaus … eine grandiose Stimme vor allem, mit einer Bandbreite von Oper bis Pop, also in dieser Hinsicht mehr als Robbie Willimas selbst. Dazu große Präsenz auf der Bühne, beachtliche Performance in Gesang, Tanz und Moderation, zwei exzellente Tänzerinnen und Backgroundsängerinnen, mit der ‚Coldfield Big Band‘ hervorragende musikalische Begleitung und last, but not least ein ausgesucht gut abgestimmtes Programm … Und an diesem Abend erklang auch eines der am meisten elektrisierenden Intros der Pop-Geschichte, und dieses Mal von der exquisiten Big Band: ‚Feel‘, und es verfehlte auch nicht seine Wirkung, zumal zu diesem Zeitpunkt das Publikum schon mächtig in Stimmung geraten war … Und Philipp Lang hat auch sehr gute Mitstreiter. Die Big Band servierte Swing und Pop vom Feinsten … Und vor allem Irene Eggerstorfer: … nicht nur dass sie sämtliche Choreografien geschaffen hatte, sie war auch eine exzellente Duett-Partnerin mit gehörigem komödiantischen Talent, großartiger Stimme und der Energie einer Naturgewalt .. Thema, Mischung und Interpreten an diesem Abend stimmten jedenfalls haargenau – und Philipp Lang hat dabei ein glückliches künstlerisches Händchen bewiesen.
-                                <br><br>
-                                <p><cite>Philipp Lang begeisterte mit seiner Tribute-Show im Konzerthaus</cite>, Heidenheimer Zeitung, 12.12.2022, Marita Kasischke</p>
-                            </blockquote>            
-                        </div>
-                        <div class="pressestimme pressestimmeSWYW">
-                            <blockquote cite="https://www.schwaebische-post.de/ostalb/ostalb-kultur/ein-abend-mit-robbies-songs-91943415.html">Unverdrossen. Mit viel Engagement und Leidenschaft. So haben sich am Samstagabend Philipp Lang und die Coldfield Big Band auf der Bühne der Stadthalle Aalen präsentiert. … die, die gekommen waren, gingen beim Album ‚Swing When You’re Winning‘ enthusiastisch mit … und Philipp Lang als charismatischem Frontmann … Lang hat Smooth in der Stimme, klingt tatsächlich ein wenig wie Robbie Williams … Deren Arrangements (die der Bläser) und die der Rockband samt E-Gitarre, Bass, Piano und Drums passen perfekt zur Show … Nach der Pause bleiben viele im Publikum einfach stehen. Wiegen sich im Takt zu ‚Angels‘ und beleuchten den Saal mit den Handytaschenlampen … Die letzte Zugabe ‚My Way‘. Philipp Lang gelingt es, den Zauber des Liedes wunderbar zu transportieren. Sein Weg auf Robbie Williams Spuren – er funktioniert.
-                                <br><br>
-                                <p><cite>Ein Abend mit Robbies Songs</cite>, Schwäbische Post, 28.11.2022, Dagmar Oltersdorf</p>
-                            </blockquote>            
-                        </div>
-                    </div>    
-                </article>
-            </div>
+        <div role="presentation" id="showsThumbs">
+            <p onclick="moveToBb()">Blues Brothers</p>
+            <p>|</p>
+            <p onclick="moveToDl5j()">Die letzten 5 Jahre</p>
+            <p>|</p>
+            <p onclick="moveToSwyw()">Swing When You’re Winning</p>
         </div>
+        <p id="toLeft" onclick="toLeft()">
+            << /p>
+                <p id="toRight" onclick="toRight()">></p>
+                <div id="showCont">
+                    <!-- Blues Brothers -->
+                    <article class="shows">
+                        <h2>Blues Brothers - Das Musical</h2>
+                        <p>Sie werden niemals geschnappt. Sie sind unterwegs im Auftrag des Herrn.</p>
+                        <div class="imgCont" role="presentation">
+                            <img class="showPic" src="images/Blues_Brothers_04.jpg"
+                                alt="Foto Blues Brothers Musical Live">
+                            <p><strong>Der Kultfilm als Musical!</strong> <br><br> Acht Darstellerinnen und Darsteller
+                                sind mit einer sechsköpfigen Liveband im Auftrag des Herrn unterwegs und bringen die
+                                legendären Blues Brothers in einer rasanten Inszenierung zurück auf die Bühne.</p>
+                            <div class="showButtons" role="presentation">
+                                <button onclick="displayOffShowButtons()">x</button>
+                                <button onclick="window.open('http://www.youtube.com', '_blank')">Trailer</button>
+                                <button onclick="showLightboxBB()">Fotos</button>
+                                <button onclick="showBesetzung(event)">Besetzung</button>
+                                <button onclick="showPressestimmen(event)">Pressestimmen</button>
+                                <button onclick="window.open('technical-rider-bb.pdf')">Technical Rider</button>
+                            </div>
+                            <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
+                            <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
+                            <p class="longShowText">„Wir sind unterwegs im Auftrag des Herrn.“ Dieser Satz von Dan
+                                Aykroyd alias Elwood Blues ist im Jahr 1980 in die Filmgeschichte eingegangen: Die
+                                „Blues Brothers“ Jake und Elwood wollen ihre alte Band wieder zusammenbringen, um ihr
+                                einstiges Waisenhaus vor dem e Verkauf zu retten. Dass dabei fast alles schief geht, was
+                                schief gehen kann, war zu erwarten. Nicht zuletzt aufgrund der zahlreichen prominenten
+                                Gäste im Film wie James Brown, Cab Calloway, Ray Charles und natürlich Aretha Franklin
+                                hat der Film längst Kultstatus erreicht. <br><br> Regie: Gerhard Weber <br>
+                                Choreografie: Julius P. Williams III <br> Musikalische Leitung: Philipp Lang</p>
+                        </div>
+                        <div class="besetzung" id="besetzungBB" role="presentation">
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Jake Blues</strong><br>Florian Hinxlage / <br>Philip Richert
+                                </p>
+                            </div>
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Elwood Blues</strong><br>Philipp Lang</p>
+                            </div>
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Aretha/Reverend</strong><br>Vanessa Weiskopf</p>
+                            </div>
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Curtis/Ray</strong><br>Julius P. Williams III / <br>William
+                                    Baugh</p>
+                            </div>
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Bob/Murph</strong><br>Stephan Wurfbaum</p>
+                            </div>
+                            <div class="act actBB">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Ensemble</strong><br>Irene Eggerstorfer (Dance Captain) <br>
+                                    Katharina Maria Abt <br> Luisa Meloni <br> Maria-Lena Reimer <br> Pauline Sell</p>
+                            </div>
+                        </div>
+                        <div class="pressestimmen" id="pressestimmenBB" role="presentation">
+                            <div class="pressestimme pressestimmeBB">
+                                <blockquote cite="">Blues Brothers – an drei Abenden erlebte ein begeistertes Publikum
+                                    in Donzdorf den Kultfilm als Musical … Die Handlung blieb auf der Spur der
+                                    wichtigsten Filmstationen, illustrierte sie durch musikalische Einlagen, unzählige
+                                    Kostümwechsel der Darstellerinnen und Darsteller, die jeweils in mehrere Rollen
+                                    schlüpften und nicht zuletzt durch schauspielerische Meisterleistungen … Das
+                                    Publikum schmiss sich weg vor Lachen, wenn Jake und Elwood bei den per Lenkrad
+                                    angedeuteten Fahrten jedem Komiker Konkurrenz machten … Das Publikum feierte bei
+                                    jedem Klassiker die Band und die Stimmen … Die Reise der Blues Brothers endete in
+                                    nicht enden wollendem stehenden Applaus.
+                                    <br><br>
+                                    <p>Neue Württembergische Zeitung, 11.10.2021, Inge Czemmel</p>
+                                </blockquote>
+                            </div>
+                            <div class="pressestimme pressestimmeBB">
+                                <blockquote
+                                    cite="https://www.landeszeitung.de/kultur/regional/blues-brothers-musical-unterwegs-im-auftrag-des-herrn-EXJGKRUNXR26MULNRZNEN2VQO5.html">
+                                    Die Blues Brothers, als Filmtypen seit gut 30 Jahren legendär, machen auch als
+                                    Musicalhelden eine Menge Spaß. Beim Gastspiel in der Ritterakademie erntet ein hoch
+                                    engagiertes Team Standing Ovations … Regisseur Gerhard Weber erzählt die Geschichte
+                                    skizzenhaft. Szenen und Dialoge spielen sich in Comic-Kürze ab. Mehr braucht es
+                                    nicht, denn alles steht im Dienst der Musik. Die kommt bärenstark rüber … Um sie
+                                    herum wirbelt ein kleines, durch die Bank stark singendes, spielfreudiges Team in
+                                    vielen Rollen und mit entsprechend schnellen Kostümwechseln … Im Publikum sitzen
+                                    natürlich einige formvollendet behütete und sonnenbebrillte Blues Brothers. Sie
+                                    rocken wie alle im Saal mit an diesem vor allem musikalisch komplett überzeugenden
+                                    Abend, Zugaben inklusive.
+                                    <br><br>
+                                    <p><cite>"Blues Brothers"-Musical: Unterwegs im Auftrag des Herrn</cite>,
+                                        Landeszeitung, 25.10.2021, Hans-Martin Koch</p>
+                                </blockquote>
+                            </div>
+                            <div class="pressestimme pressestimmeBB">
+                                <blockquote
+                                    cite="https://www.solinger-tageblatt.de/solingen/kultfilm-blues-brothers-witzig-auf-die-buehne-gebracht-92082693.html">
+                                    Die Konzertdirektion Lang brachte eine temporeiche und witzige Bühnenfassung nach
+                                    des Kultstreifens von 1980 nach Solingen, die schon nach wenigen Augenblicken die
+                                    Herzen des Publikums erobert hatte und vielen im Saal ein Dauergrinsen ins Gesicht
+                                    zauberte, das erst nach dem Schlussapplaus nachließ … Das Publikum wieherte vor
+                                    Lachen, wenn die beiden Jungs bei den per Lenkrad angedeuteten Fahrten in dieser
+                                    ‚Bullenschaukel‘ die Fahrgeräusche selbst machten … Unterstützt wurde das lustvolle
+                                    Spiel von weiteren sechs Darstellern, die nicht nur sprachen und sangen, sondern mit
+                                    Choreografien farbige Akzente setzten. Dazu gab es viel ‚Rhythm and Soul‘. Dank
+                                    einer souveränen Band und stimmstarken Sängern stimmte die Musik jederzeit und ließ
+                                    atmosphärische Leichtigkeit in den gut gefüllten Saal schwappen … Am Ende allen
+                                    Schlamassels stand nicht nur das Happy End, sondern tosender Beifall mit
+                                    zustimmenden Pfiffen.
+                                    <br><br>
+                                    <p><cite>Kultfilm „Blues Brothers“ witzig auf die Bühne gebracht</cite>, Solinger
+                                        Tageblatt, 13.02.2023, Jutta Schreiber-Lenz</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Die letzten 5 Jahre -->
+                    <article class="shows">
+                        <h2>Die letzten 5 Jahre</h2>
+                        <p>Vom Verlieben und Verlassen</p>
+                        <div class="imgCont" role="presentation">
+                            <img class="showPic" src="images/DL5J_01.jpg" alt="Foto Die Letzten 5 Jahre Live">
+                            <p>Jason Robert Brown erzählt in DIE LETZTEN 5 JAHRE die Geschichte des Künstlerpaares
+                                Cathy und Jamie. <br><br> In kräftigen Farben erwecken seine Songs die Wege des
+                                aufsteigenden Autors Jamie und der eher erfolglosen Sängerin Cathy zum Leben, die sich
+                                treffen, sich unsterblich ineinander verlieben – und wieder verlieren…</p>
+                            <div class="showButtons" role="presentation">
+                                <button onclick="displayOffShowButtons()">x</button>
+                                <button>Trailer</button>
+                                <button onclick="showLightboxDl5j()">Fotos</button>
+                                <button onclick="showBesetzung(event)">Besetzung</button>
+                                <button onclick="showPressestimmen(event)">Pressestimmen</button>
+                                <button>Technical Rider</button>
+                            </div>
+                            <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
+                            <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
+                            <p class="longShowText">Das Stück wurde 2001 in Chicago uraufgeführt. Der Clou an dem
+                                durchkomponierten Kammermusical ist, dass die Geschichte aus Jamies Sicht chronologisch
+                                und aus Cathys Sicht rückwärts erzählt wird und sich die Erzählstränge bei der Hochzeit
+                                treffen. In mitreißenden Stücken wird die emotionale Geschichte der beiden erzählt und
+                                zeigt die Höhen und Tiefen Ihrer Beziehung aus den jeweiligen Blickwinkeln. Mit
+                                Musicalstar Zodwa Selele und The-Voice-Finalist Simon Paterno in den
+                                Hauptrollen<br><br>Regie: Werner Bauer <br>Musikalische Leitung: Rebecca Lang</p>
+                        </div>
+                        <div class="besetzung" id="besetzungDL5J" role="presentation">
+                            <div class="act actDL5J">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Cathy</strong><br>Zodwa Selele / <br> Lillemor Spitzer</p>
+                            </div>
+                            <div class="act actDL5J">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Jamie</strong><br>Simon Paterno / <br> Philipp Lang</p>
+                            </div>
+                            <div class="act actDL5J">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Klavier</strong><br>Rebecca Lang / <br>Maria van Alst</p>
+                            </div>
+                            <div class="act actDL5J">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Cello</strong><br>Elisabet Iserte Lopez / <br>Jakob Nierenz
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pressestimmen" id="pressestimmenDL5J" role="presentation">
+                            <div class="pressestimme pressestimmeDL5J">
+                                <blockquote
+                                    cite="https://www.landeszeitung.de/kultur/regional/premiere-fuer-kammermusical-die-letzten-fuenf-jahre-MSHSXWSLDD5UCW4TGKQZPA2XRY.html">
+                                    Das Lieben schreibt bekanntlich die besten Geschichten. Sie gehen nur leider oft
+                                    nicht gut aus … Browns Musical ‚Die letzten fünf Jahre‘ aber blieb und wird vom
+                                    Time-Magazine zu einer der besten Shows der Gegenwart erklärt … Jetzt kam es in
+                                    einer freien, sehr ansprechenden und klugen Lüneburger Produktion in der
+                                    Ritterakademie heraus … Regisseure sind gefordert, die Gegenläufigkeit plausibel zu
+                                    machen. Werner Bauer hat eine griffige Idee: Im Hintergrund des aus Tafelwänden
+                                    bestehenden Bühnenbilds verläuft ein Zeitstrahl … Formal tritt immer im Wechsel
+                                    eine/r auf die Bühne – bis auf die Hochzeit. Bauer bringt beide in den Liedern
+                                    zusammen. Die Akteure müsen also zugleich Zuwendung innerhalb des Liedes zeigen und
+                                    den gerade laufenden Zeitsprung deutlich lassen … Simon Paterno bringt
+                                    Musical-Erfahrung mit, spielt und singt sehr locker, vor allem im Rockigen, und
+                                    bringt den Jamie glaubhaft rüber … Für die Cathy-Partie wurde ein Musicalstar
+                                    gewonnen … Selele lässt mit ihrer kraftvollen, farbigen und variablen Stimme alles
+                                    von Glückseligkeit bis Tränenkummer spüren. Das hat großes Format. … Hochkomplex und
+                                    virtuos ist es, was Rebecca Lang im Dauereinsatz aus den Tasten holt … Umso
+                                    eindringlicher kommen die ruhigen Momente rüber. Am Cello streicht Elisabet Iserte
+                                    Lopez zusätzlich Farbe in die Musik, treibt auch mal das Rhythmische voran – das tut
+                                    der Sache gut. … Die Premiere in der Ritterakademie war nicht ausgebucht, aber
+                                    gebührend gefeiert wurde sie dennoch.
+                                    <br><br>
+                                    <p><cite>Premiere für Kammermusical „Die letzten fünf Jahre“</cite>, Landeszeitung,
+                                        26.03.2022, Hans-Martin Koch</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Swing When You're Winning -->
+                    <article class="shows">
+                        <h2>Swing When You're Winning</h2>
+                        <p>Robbie Williams Tribute Show</p>
+                        <div class="imgCont" role="presentation">
+                            <img class="showPic" src="images/SWYW_01.jpg" alt="Foto Swing When You're Winning Live">
+                            <p>„I will talk and Hollywood will listen” – so beginnt Robbie Williams’ legendäres Album
+                                Swing When You’re Winning. Nur ein einziges Mal war es live zu erleben und zwar in der
+                                ehrwürdigen Royal Albert Hall in London. Sänger und Schauspieler Philipp Lang bringt
+                                dieses Meisterwerk nun zurück auf die Bühne.</p>
+                            <div class="showButtons" role="presentation">
+                                <button onclick="displayOffShowButtons()">x</button>
+                                <button>Trailer</button>
+                                <button onclick="showLightboxSwyw()">Fotos</button>
+                                <button onclick="showBesetzung(event)">Besetzung</button>
+                                <button onclick="showPressestimmen(event)">Pressestimmen</button>
+                                <button>Technical Rider</button>
+                            </div>
+                            <img src="images/f_logo_RGB-Blue_100.png" class="socMedLog" alt="Facebook Button">
+                            <img src="images/Instagram_Glyph_Gradient_RGB.png" class="socMedLog" alt="Instagram Button">
+                            <p class="longShowText">Tauchen Sie ein in die goldene Zeit der Swing-Ära und lassen Sie
+                                sich von einem Robbie-Williams-Tribute-Konzert der besonderen Art verzaubern! Neben
+                                seinem international gefeierten Swingalbum dürfen auch die großen Radiohits wie Feel und
+                                Let Me Entertain You sowie der späte Nachfolger Swings Both Ways nicht fehlen. <br> Mit
+                                dem Sänger und Entertainer Philipp Lang in der Rolle des Robbie Williams, dem
+                                hervorragenden Sound der Coldfield Big Band und der Choreografie Irene Eggerstorfers
+                                erwarten Sie großes Entertainment und eine Reise in die glamouröse Welt des Swings – und
+                                zurück in die erfolgreichsten Jahre des Künstlers Robbie Williams.</p>
+                        </div>
+                        <div class="besetzung" id="besetzungSWYW" role="presentation">
+                            <div class="act actSWYW">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Robbie Williams</strong><br>Philipp Lang</p>
+                            </div>
+                            <div class="act actSWYW">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Ensemble</strong><br>Irene Eggerstorfer <br> Pauline Sell
+                                    <br> Luisa Meloni <br> Bengisu Özmeric</p>
+                            </div>
+                            <div class="act actSWYW">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Coldfield Big Band</strong><br>Dennis Aubele <br> Christian
+                                    Wolf <br> Maria van Alst <br> Vincent Nowacki <br> Michael Stegmaier <br> Daniel
+                                    Schmid <br> Valentin Sachsenmaier <br> Alexander Schenk <br> David Sanwald <br> Lisa
+                                    Leidenfrost <br> Marcus Schmid</p>
+                            </div>
+                            <div class="act actSWYW">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Musikalische Leitung</strong><br>Philipp Lang</p>
+                            </div>
+                            <div class="act actSWYW">
+                                <img src="images/darsteller/Florian_Hinxlage.jpg"
+                                    alt="Schauspieler und Musicaldarsteller Florian Hinxlage">
+                                <p class="actVita"><strong>Choreografie</strong><br>Irene Eggerstorfer</p>
+                            </div>
+                        </div>
+                        <div class="pressestimmen" id="pressestimmenSWYW" role="presentation">
+                            <div class="pressestimme pressestimmeSWYW">
+                                <blockquote cite="">Der Pulsschlag des Swing. Rund 700 Zuschauer feierten die Lumberjack
+                                    Big Band, Philipp Lang, Sängerinnen und Tänzerinnen … Dann ist er da – der Sänger
+                                    Philipp Lang, der … vom ersten Ton an in ausgewogener Symbiose mit der Big Band
+                                    Robbie Williams‘ erfolreiches Album ‚Swing When You’re Winning‘ interpretiert … und
+                                    man spürt sofort, die Chemie zwischen ihm und den Zuschauern passt … Philipp Lang
+                                    bringt alles mit, was einen guten Bühnensänger ausmacht. Es ist einfach ein Genuss
+                                    ihm zuzuhören und zuzusehen. Er ist charmant, sympathisch, professionell und mit
+                                    mehreren Talenten gesegnet. Stimme: großartig. Intonation: top. Bewegung:
+                                    geschmeidig. Ein smarter Typ im Anzug, Weste und Fliege … Zeigt sich bei ‚Shine My
+                                    Shoes‘ sowie ‚Hot Fudge‘ von der rockigeren Seite, lässt bei ‚Feel‘ Frauenherzen
+                                    schmelzen und punktet nicht zuletzt beim Stück ‚Soda Pop‘. Ein Hingucker sind die
+                                    beiden Tänzerinnen Irene Eggerstorfer und Pauline Sell. Auch Technik und
+                                    Lichtkomposition machten ihren Job gut. Das Fazit: ‚Let me entertain you‘ – ja, das
+                                    erlebten die Besucher auf ganzer Linie.
+                                    <br><br>
+                                    <p>Neue Württembergische Zeitung, 26.04.2022, Sabine Ackermann</p>
+                                </blockquote>
+                            </div>
+                            <div class="pressestimme pressestimmeSWYW">
+                                <blockquote
+                                    cite="https://www.hz.de/kultur/kultur-regional/_robbie-williams_-in-heidenheim-philipp-lang-begeisterte-mit-seiner-tribute-show-im-konzerthaus-68100407.html">
+                                    Stimmiges Konzept, sorgfältige Inszenierung und gute Mitstreiter: Philipp Lang
+                                    überzeugte mit seiner Robbie-Williams-Tribute-Show im Konzerthaus … eine grandiose
+                                    Stimme vor allem, mit einer Bandbreite von Oper bis Pop, also in dieser Hinsicht
+                                    mehr als Robbie Willimas selbst. Dazu große Präsenz auf der Bühne, beachtliche
+                                    Performance in Gesang, Tanz und Moderation, zwei exzellente Tänzerinnen und
+                                    Backgroundsängerinnen, mit der ‚Coldfield Big Band‘ hervorragende musikalische
+                                    Begleitung und last, but not least ein ausgesucht gut abgestimmtes Programm … Und an
+                                    diesem Abend erklang auch eines der am meisten elektrisierenden Intros der
+                                    Pop-Geschichte, und dieses Mal von der exquisiten Big Band: ‚Feel‘, und es verfehlte
+                                    auch nicht seine Wirkung, zumal zu diesem Zeitpunkt das Publikum schon mächtig in
+                                    Stimmung geraten war … Und Philipp Lang hat auch sehr gute Mitstreiter. Die Big Band
+                                    servierte Swing und Pop vom Feinsten … Und vor allem Irene Eggerstorfer: … nicht nur
+                                    dass sie sämtliche Choreografien geschaffen hatte, sie war auch eine exzellente
+                                    Duett-Partnerin mit gehörigem komödiantischen Talent, großartiger Stimme und der
+                                    Energie einer Naturgewalt .. Thema, Mischung und Interpreten an diesem Abend
+                                    stimmten jedenfalls haargenau – und Philipp Lang hat dabei ein glückliches
+                                    künstlerisches Händchen bewiesen.
+                                    <br><br>
+                                    <p><cite>Philipp Lang begeisterte mit seiner Tribute-Show im Konzerthaus</cite>,
+                                        Heidenheimer Zeitung, 12.12.2022, Marita Kasischke</p>
+                                </blockquote>
+                            </div>
+                            <div class="pressestimme pressestimmeSWYW">
+                                <blockquote
+                                    cite="https://www.schwaebische-post.de/ostalb/ostalb-kultur/ein-abend-mit-robbies-songs-91943415.html">
+                                    Unverdrossen. Mit viel Engagement und Leidenschaft. So haben sich am Samstagabend
+                                    Philipp Lang und die Coldfield Big Band auf der Bühne der Stadthalle Aalen
+                                    präsentiert. … die, die gekommen waren, gingen beim Album ‚Swing When You’re
+                                    Winning‘ enthusiastisch mit … und Philipp Lang als charismatischem Frontmann … Lang
+                                    hat Smooth in der Stimme, klingt tatsächlich ein wenig wie Robbie Williams … Deren
+                                    Arrangements (die der Bläser) und die der Rockband samt E-Gitarre, Bass, Piano und
+                                    Drums passen perfekt zur Show … Nach der Pause bleiben viele im Publikum einfach
+                                    stehen. Wiegen sich im Takt zu ‚Angels‘ und beleuchten den Saal mit den
+                                    Handytaschenlampen … Die letzte Zugabe ‚My Way‘. Philipp Lang gelingt es, den Zauber
+                                    des Liedes wunderbar zu transportieren. Sein Weg auf Robbie Williams Spuren – er
+                                    funktioniert.
+                                    <br><br>
+                                    <p><cite>Ein Abend mit Robbies Songs</cite>, Schwäbische Post, 28.11.2022, Dagmar
+                                        Oltersdorf</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                </div>
     </section>
     <!-- Presse 1 -->
     <section>
-        <div class="presseBlock" id="presse1"> 
-            <blockquote cite="https://www.hz.de/kultur/kultur-regional/_robbie-williams_-in-heidenheim-philipp-lang-begeisterte-mit-seiner-tribute-show-im-konzerthaus-68100407.html">[...] eine grandiose Stimme vor allem, mit einer Bandbreite von Oper bis Pop, also in dieser Hinsicht mehr als Robbie Williams selbst. Dazu große Präsenz auf der Bühne, beachtliche Performance in Gesang, Tanz und Moderation, zwei exzellente Tänzerinnen und Backgroundsängerinnen, mit der „Coldfield Big Band“ [...] hervorragende musikalische Begleitung und last, but not least ein ausgesucht gut abgestimmtes Programm.
+        <div class="presseBlock" id="presse1">
+            <blockquote
+                cite="https://www.hz.de/kultur/kultur-regional/_robbie-williams_-in-heidenheim-philipp-lang-begeisterte-mit-seiner-tribute-show-im-konzerthaus-68100407.html">
+                [...] eine grandiose Stimme vor allem, mit einer Bandbreite von Oper bis Pop, also in dieser Hinsicht
+                mehr als Robbie Williams selbst. Dazu große Präsenz auf der Bühne, beachtliche Performance in Gesang,
+                Tanz und Moderation, zwei exzellente Tänzerinnen und Backgroundsängerinnen, mit der „Coldfield Big Band“
+                [...] hervorragende musikalische Begleitung und last, but not least ein ausgesucht gut abgestimmtes
+                Programm.
                 <br><br>
-                <p><cite>Philipp Lang begeisterte mit seiner Tribute-Show im Konzerthaus</cite>, Heidenheimer Zeitung über "Swing When You're Winning", 12. Dezember 2022.</p>
+                <p><cite>Philipp Lang begeisterte mit seiner Tribute-Show im Konzerthaus</cite>, Heidenheimer Zeitung
+                    über "Swing When You're Winning", 12. Dezember 2022.</p>
             </blockquote>
         </div>
     </section>
@@ -235,24 +403,40 @@
             <div class="leistungscont orcont" role="presentation">
                 <h3 class="leistungshead"><strong>Produktion</strong> von Musiktheater, Konzerten und Shows</h3>
                 <p class="leistungsplaceholder">...</p>
-                <p class="leistungstext">In unseren Produktionen bringen wir erstklassige Künstlerinnen und Künstler zusammen und konzipieren gemeinsam mit den Kreativ- und Technikteams besondere Shows, die das Publikum begeistern und lange in Erinnerung bleiben. Unsere Produktionen sind auf Veranstaltungshäuser mit Gastspielbetrieb zugeschnitten und entsprechend mobil. Wir arbeiten mit unseren Künstlerinnen, Künstlern und Crews langfristig zusammen und legen Wert auf eine vertrauensvolle und positive Arbeitsatmosphäre und eine stets hohe künstlerische Qualität.</p>
+                <p class="leistungstext">In unseren Produktionen bringen wir erstklassige Künstlerinnen und Künstler
+                    zusammen und konzipieren gemeinsam mit den Kreativ- und Technikteams besondere Shows, die das
+                    Publikum begeistern und lange in Erinnerung bleiben. Unsere Produktionen sind auf
+                    Veranstaltungshäuser mit Gastspielbetrieb zugeschnitten und entsprechend mobil. Wir arbeiten mit
+                    unseren Künstlerinnen, Künstlern und Crews langfristig zusammen und legen Wert auf eine
+                    vertrauensvolle und positive Arbeitsatmosphäre und eine stets hohe künstlerische Qualität.</p>
             </div>
             <div class="leistungscont orcont" role="presentation">
                 <h3 class="leistungshead"><strong>Organisation</strong> und Vertrieb von Gastspielen</h3>
-                <p class="leistungsplaceholder">...</p>              
-                <p class="leistungstext">Für Veranstaltungshäuser mit Gastspielbetrieb sind wir verlässlicher Partner und bieten unsere Shows sowohl als Komplettpakete als auch individuell zugeschnitten an. Unsere Ensembles und Technikteams arbeiten langfristig und vertrauensvoll zusammen und sorgen für eine verlässlich hohe Qualität. Unser Büro bietet Ihnen feste, verlässliche Ansprechpartnern im Vorfeld und vor Ort. Außerdem vermarkten wir alle unsere Gastspiele professionell über Social Media und unterstützen so Ihre Verkäufe.</p>
+                <p class="leistungsplaceholder">...</p>
+                <p class="leistungstext">Für Veranstaltungshäuser mit Gastspielbetrieb sind wir verlässlicher Partner
+                    und bieten unsere Shows sowohl als Komplettpakete als auch individuell zugeschnitten an. Unsere
+                    Ensembles und Technikteams arbeiten langfristig und vertrauensvoll zusammen und sorgen für eine
+                    verlässlich hohe Qualität. Unser Büro bietet Ihnen feste, verlässliche Ansprechpartnern im Vorfeld
+                    und vor Ort. Außerdem vermarkten wir alle unsere Gastspiele professionell über Social Media und
+                    unterstützen so Ihre Verkäufe.</p>
             </div>
             <div class="leistungscont orcont" role="presentation">
                 <h3 class="leistungshead"><strong>Konzeption</strong> individueller Veranstaltungen und Formate</h3>
                 <p class="leistungsplaceholder">...</p>
-                <p class="leistungstext">Gemeinsam mit Ihnen gestalten wir Ihre persönlichen Showformate. Unsere besondere Stärke ist unsere künstlerische Expertise in den Bereichen musikalische Gestaltung, Inszenierung, Lichtdesign und Videoschnitt. Schildern Sie uns Ihre Vision und wir erarbeiten mit Ihnen ein Konzept für eine Show, die Ihr Publikum, Ihre Kunden, Ihre Gäste oder Ihre Mitarbeitenden nie mehr vergessen werden.</p>
+                <p class="leistungstext">Gemeinsam mit Ihnen gestalten wir Ihre persönlichen Showformate. Unsere
+                    besondere Stärke ist unsere künstlerische Expertise in den Bereichen musikalische Gestaltung,
+                    Inszenierung, Lichtdesign und Videoschnitt. Schildern Sie uns Ihre Vision und wir erarbeiten mit
+                    Ihnen ein Konzept für eine Show, die Ihr Publikum, Ihre Kunden, Ihre Gäste oder Ihre Mitarbeitenden
+                    nie mehr vergessen werden.</p>
             </div>
         </div>
     </section>
     <!-- Presse 2 -->
     <section>
-        <div class="presseBlock" id="presse2"> 
-            <blockquote cite="">Das war echt toll. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quasi deserunt ipsa, eaque cupiditate quibusdam earum accusamus, sunt explicabo ipsum qui repellat corrupti aut amet magni, iure odit fugiat pariatur!
+        <div class="presseBlock" id="presse2">
+            <blockquote cite="">Das war echt toll. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+                quasi deserunt ipsa, eaque cupiditate quibusdam earum accusamus, sunt explicabo ipsum qui repellat
+                corrupti aut amet magni, iure odit fugiat pariatur!
                 <br><br>
                 <p><cite>--Kritik--</cite>, --erschienen in-- über "Blues Brothers - Das Musical", --Datum--.</p>
             </blockquote>
@@ -280,7 +464,7 @@
                 <td>Hardrock Heaven Zabrze</td>
                 <td><a href="#">Tickets!</a></td>
             </tr>
-        </table>    
+        </table>
     </section>
     <!-- Referenzen -->
     <section id="referenzensec" name="navRefTarget">
@@ -312,8 +496,10 @@
     </section>
     <!-- Presse 3 -->
     <section>
-        <div class="presseBlock" id="presse3"> 
-            <blockquote cite="">Das war echt toll. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quasi deserunt ipsa, eaque cupiditate quibusdam earum accusamus, sunt explicabo ipsum qui repellat corrupti aut amet magni, iure odit fugiat pariatur!
+        <div class="presseBlock" id="presse3">
+            <blockquote cite="">Das war echt toll. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+                quasi deserunt ipsa, eaque cupiditate quibusdam earum accusamus, sunt explicabo ipsum qui repellat
+                corrupti aut amet magni, iure odit fugiat pariatur!
                 <br><br>
                 <p><cite>--Kritik--</cite>, --erschienen in-- über "Blues Brothers - Das Musical", --Datum--.</p>
             </blockquote>
@@ -324,15 +510,15 @@
         <h2 class="secHeader">Team</h2>
         <img src="images/darsteller/Philipp_Lang_TEAM.jpg" alt="Philipp Lang">
         <div>
-                <h3>Philipp Lang</h3>
-                <p>+49 174 3129759</p>
-                <p>office@konzertdirektion-lang.de</p>
+            <h3>Philipp Lang</h3>
+            <p>+49 174 3129759</p>
+            <p>office@konzertdirektion-lang.de</p>
         </div>
         <img src="images/darsteller/Claudia_Thao_TEAM.jpeg" alt="Claudia Thao">
         <div>
-                <h3>Claudia Thao</h3>
-                <p>+49 174 3129759</p>
-                <p>office@konzertdirektion-lang.de</p>
+            <h3>Claudia Thao</h3>
+            <p>+49 174 3129759</p>
+            <p>office@konzertdirektion-lang.de</p>
         </div>
     </section>
     <!-- Footer -->
@@ -407,7 +593,287 @@
     </article>
 
     <!-- JS -->
-    <script type="text/javascript" src="js.js"></script>
+    <script>
+        // make nav sticky
+        const nav = document.getElementsByTagName("nav")[0];
+
+        document.addEventListener('scroll', function () {
+            if (window.scrollY > window.innerHeight) {
+                nav.style.position = 'fixed';
+                nav.style.top = 0;
+            } else {
+                nav.style.position = 'relative';
+                nav.style.top = 'unset';
+            }
+        })
+
+        // auto move header slider
+        let headerPosCounter = 0;
+
+        const moveHeaderSlider = () => {
+            if (headerPosCounter === -500) {
+                document.getElementById("headerImgCont").style.left = 0;
+                headerPosCounter = 0;
+            } else {
+                headerPosCounter -= 100;
+                document.getElementById("headerImgCont").style.left = headerPosCounter + 'vw';
+            }
+        }
+
+        setInterval(moveHeaderSlider, 4000);
+
+        // slide shows
+        let contPosStart = null;
+        let xPosStart = null;
+        let xDiff = null;
+        const showCont = document.getElementById("showCont");
+        const showsArr = document.getElementsByClassName("shows");
+
+        for (let i = 0; i < showsArr.length; i++) {
+            showsArr[i].addEventListener('touchstart', function (e) {
+                contPosStart = window.getComputedStyle(showCont).left;
+                xPosStart = e.touches[0].clientX;
+            })
+
+            showsArr[i].addEventListener('touchmove', function (e) {
+                xDiff = e.touches[0].clientX - xPosStart;
+                showCont.style.left = parseInt(contPosStart) + xDiff + 'px';
+            })
+
+            showsArr[i].addEventListener('touchend', function (e) {
+                if (xDiff <= 30 && xDiff >= -30) {
+                    showCont.style.left = contPosStart;
+                } else if (xDiff < -30) {
+                    if (leftRightCounter === 2) {
+                        showCont.style.left = "-200%";
+                    } else {
+                        toRight();
+                    }
+                } else if (xDiff > 30) {
+                    if (leftRightCounter === 0) {
+                        showCont.style.left = "0";
+                    } else {
+                        toLeft();
+                    }
+                }
+            })
+        }
+
+        // showSlider Thumbnails
+        const moveToBb = () => {
+            document.getElementById("showCont").style.left = "0";
+            leftRightCounter = 0;
+            hideBesetzungen();
+            hidePressestimmen();
+        }
+        const moveToDl5j = () => {
+            document.getElementById("showCont").style.left = "-100%";
+            leftRightCounter = 1;
+            hideBesetzungen();
+            hidePressestimmen();
+        }
+        const moveToSwyw = () => {
+            document.getElementById("showCont").style.left = "-200%";
+            leftRightCounter = 2;
+            hideBesetzungen();
+            hidePressestimmen();
+        }
+
+
+
+        // right, left ShowSlider
+        let leftRightCounter = 0;
+
+        const toLeft = () => {
+            if (leftRightCounter === 1) {
+                document.getElementById("showCont").style.left = "0";
+                leftRightCounter--;
+            } else if (leftRightCounter === 2) {
+                document.getElementById("showCont").style.left = "-100%";
+                leftRightCounter--;
+            }
+            hideBesetzungen();
+            hidePressestimmen();
+        }
+
+        const toRight = () => {
+            if (leftRightCounter === 0) {
+                document.getElementById("showCont").style.left = "-100%";
+                leftRightCounter++;
+            } else if (leftRightCounter === 1) {
+                document.getElementById("showCont").style.left = "-200%";
+                leftRightCounter++;
+            }
+            hideBesetzungen();
+            hidePressestimmen();
+        }
+
+        // Besetzung
+        const showBesetzung = (event) => {
+            hidePressestimmen();
+
+            let el = event.target;
+            el.parentNode.parentNode.parentNode.querySelector(".besetzung").style.marginBottom = 0;
+            el.parentNode.parentNode.parentNode.querySelector(".besetzung").style.position = 'relative';
+
+            let children = el.parentNode.parentNode.parentNode.querySelectorAll(".act");
+            function rotateChildren() {
+                for (let i = 0; i < children.length; i++) {
+                    children[i].style.transform = 'rotateX(0deg)';
+                }
+            }
+
+            if (window.innerWidth <= 980) {
+                el.parentNode.parentNode.parentNode.querySelector(".besetzung").scrollIntoView();
+            }
+
+            setTimeout(rotateChildren, 1000);
+        }
+
+        const hideBesetzungen = () => {
+            let besetzungen = document.getElementsByClassName("besetzung");
+            let children = document.getElementsByClassName("act");
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.transform = 'rotateX(90deg)';
+            }
+            for (let i = 0; i < besetzungen.length; i++) {
+                besetzungen[i].style.marginBottom = '-100%';
+                besetzungen[i].style.position = 'absolute';
+            }
+        }
+
+        // Pressestimmen
+        const showPressestimmen = (event) => {
+            hideBesetzungen();
+
+            let el = event.target;
+            el.parentNode.parentNode.parentNode.querySelector(".pressestimmen").style.marginBottom = 0;
+            el.parentNode.parentNode.parentNode.querySelector(".pressestimmen").style.position = 'relative';
+
+            let children = el.parentNode.parentNode.parentNode.querySelectorAll(".pressestimme");
+            function rotateChildren() {
+                for (let i = 0; i < children.length; i++) {
+                    children[i].style.transform = 'rotateX(0deg)';
+                }
+            }
+
+            el.parentNode.parentNode.parentNode.querySelector(".pressestimmen").scrollIntoView();
+
+            setTimeout(rotateChildren, 1000);
+        }
+
+        const hidePressestimmen = () => {
+            let allePressestimmen = document.getElementsByClassName("pressestimmen");
+            let children = document.getElementsByClassName("pressestimme");
+            for (let i = 0; i < children.length; i++) {
+                children[i].style.transform = 'rotateX(90deg)';
+            }
+            for (let i = 0; i < allePressestimmen.length; i++) {
+                allePressestimmen[i].style.marginBottom = '-100%';
+                allePressestimmen[i].style.position = 'absolute';
+            }
+        }
+
+
+        // lightbox
+        const lightboxThumbImgs = document.getElementsByClassName("lightboxThumbImg");
+        for (let i = 0; i < lightboxThumbImgs.length; i++) {
+            lightboxThumbImgs[i].addEventListener('click', function showImg() {
+                this.parentNode.parentNode.firstElementChild.innerHTML = `<img src=${this.src} alt="${this.alt}">`;
+            });
+        }
+
+        const closers = document.getElementsByClassName("closeModal");
+        for (let i = 0; i < closers.length; i++) {
+            closers[i].addEventListener('click', function closeModal() {
+                this.parentNode.style.display = 'none';
+            });
+        }
+
+        const showLightboxBB = () => {
+            document.getElementById("lightboxBB").style.display = 'block';
+        }
+        const showLightboxDl5j = () => {
+            document.getElementById("lightboxDl5j").style.display = 'block';
+        }
+        const showLightboxSwyw = () => {
+            document.getElementById("lightboxSwyw").style.display = 'block';
+        }
+
+
+        //nav
+        const navClick = (name) => {
+
+            let yVal = document.querySelector("[name=" + name + "]").getBoundingClientRect().top + window.pageYOffset;
+            window.scroll(0, yVal - 100);
+            if (window.innerWidth <= 980) {
+                for (let i = 0; i < menupunkte.length; i++) {
+                    menupunkte[i].style.display = 'none';
+                    menutoggle = 0;
+                }
+            }
+        }
+
+        //show Nav
+        const menupunkte = document.getElementsByClassName("menupunkt");
+        let menutoggle = 0;
+        document.getElementById("hamburger").addEventListener('click', function () {
+            if (menutoggle === 0) {
+                for (let i = 0; i < menupunkte.length; i++) {
+                    menupunkte[i].style.display = 'block';
+                    menutoggle = 1;
+                }
+            } else {
+                for (let i = 0; i < menupunkte.length; i++) {
+                    menupunkte[i].style.display = 'none';
+                    menutoggle = 0;
+                }
+            }
+        })
+
+        //hide text leistung
+        const orconts = document.getElementsByClassName("orcont");
+        const leistungstexte = document.getElementsByClassName("leistungstext");
+        const leistungsplaceholders = document.getElementsByClassName("leistungsplaceholder");
+
+        for (let i = 0; i < orconts.length; i++) {
+            if (window.innerWidth <= 980) {
+                orconts[i].addEventListener('click', function () {
+                    //reset
+                    for (let l = 0; l < leistungsplaceholders.length; l++) {
+                        leistungsplaceholders[l].style.display = 'block';
+                    }
+                    for (let m = 0; m < leistungstexte.length; m++) {
+                        leistungstexte[m].style.display = 'none';
+                    }
+                    for (let k = 0; k < orconts.length; k++) {
+                        orconts[k].style.order = 'unset';
+                        if (window.innerWidth <= 738) {
+                            orconts[k].style.width = '90%';
+                        } else {
+                            orconts[k].style.width = '28%';
+                        }
+                    }
+                    //set
+                    this.getElementsByClassName("leistungsplaceholder")[0].style.display = 'none';
+                    this.style.order = 3;
+                    for (let j = 0; j < orconts.length; j++) {
+                        orconts[j].style.flexGrow = 1;
+                    }
+                    if (window.innerWidth <= 738) {
+                        this.style.width = '90%';
+                    } else {
+                        this.style.width = '80%';
+                    }
+                    this.parentNode.style.flexWrap = 'wrap';
+                    this.getElementsByClassName("leistungstext")[0].style.display = 'unset';
+                })
+
+            }
+        }
+
+    </script>
 
 </body>
+
 </html>
