@@ -1,0 +1,10 @@
+.SearchResult {
+    width: 65%;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: rgba(1,12,63,0.7);
+    box-shadow: 0 4px 2px #000000;
+    font-family: 'Poppins', sans-serif;
+    margin: 80px auto;
+    max-height: 50vh;
+}
